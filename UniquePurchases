@@ -21,15 +21,15 @@ public class UniquePurchases {
     public static void main(String[] args) {
         // переменная uniquePurchases должна содержать множество уникальных товаров
         Set<String> uniquePurchases = new HashSet<>(allPurchases);
-        findUniquePurchases(allPurchases, uniquePurchases);
+         Set<String> res = findUniquePurchases(allPurchases, uniquePurchases);
 
         // допишите вывод количества уникальных товаров
         System.out.println( "За месяц было куплено " + uniquePurchases.size() + " уникальных товаров.");
     }
   
     // реализуйте этот метод
-    public static void findUniquePurchases(List<String> allPurchases, Set<String> uniquePurchases) {
-            System.out.println( "За месяц было куплено " + uniquePurchases + " уникальных товаров.");
+    public static  Set<String> findUniquePurchases(List<String> allPurchases, Set<String> uniquePurchases) {
+            return uniquePurchases ;
 
     }
 }
