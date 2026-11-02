@@ -22,6 +22,8 @@ public class UniquePurchases {
         // переменная uniquePurchases должна содержать множество уникальных товаров
         Set<String> uniquePurchases = new HashSet<>(allPurchases);
          Set<String> res = findUniquePurchases(allPurchases, uniquePurchases);
+          System.out.println( res + " уникальных товаров.");
+
 
         // допишите вывод количества уникальных товаров
         System.out.println( "За месяц было куплено " + uniquePurchases.size() + " уникальных товаров.");
