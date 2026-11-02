@@ -20,17 +20,18 @@ public class UniquePurchases {
 
     public static void main(String[] args) {
         // переменная uniquePurchases должна содержать множество уникальных товаров
-        Set<String> uniquePurchases = new HashSet<>(allPurchases);
-         Set<String> res = findUniquePurchases(allPurchases, uniquePurchases);
+         Set<String> res = findUniquePurchases(allPurchases);
           System.out.println( res + " уникальных товаров.");
 
 
         // допишите вывод количества уникальных товаров
-        System.out.println( "За месяц было куплено " + uniquePurchases.size() + " уникальных товаров.");
+        System.out.println( "За месяц было куплено " + res.size() + " уникальных товаров.");
     }
   
     // реализуйте этот метод
-    public static  Set<String> findUniquePurchases(List<String> allPurchases, Set<String> uniquePurchases) {
+    public static  Set<String> findUniquePurchases(List<String> allPurchases) {
+                Set<String> uniquePurchases = new HashSet<>(allPurchases);
+
             return uniquePurchases ;
 
     }
